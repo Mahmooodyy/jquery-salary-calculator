@@ -1,0 +1,30 @@
+h1{
+    font-family: arial, sans-serif;
+    text-align: center;
+}
+h2{
+    font-family: arial, sans-serif;
+    text-align: left;
+}
+h3{
+    font-family: arial, sans-serif;
+}
+
+#delete-button{
+    cursor: pointer;
+}
+#submit-button{
+    cursor: pointer;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }

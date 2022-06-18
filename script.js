@@ -1,28 +1,32 @@
 $(document).ready(onReady);
 
 function onReady(){
-    $(".add-row").click(handleAddClick);
-    $(".delete-row").click(handleDeleteClick);
-
-function handleAddClick(){
-        let firstName = $("#first-name").val();
-        let lastName = $("#last-name").val();
-        let eID = $("#eID").val();
-        let title = $("#title").val();
-        let salary = $("#salary").val();
-        let employeeInfo = "<tr><td><input type='checkbox' name='record'></td><td>" + firstName + "</td><td>" + lastName + "</td><td>" + eID + "</td><td>" + title + "</td><td>" + salary + "</td></tr>"
-        $("table tbody").append(employeeInfo);
-};
-
+    $(".add-person").click(handleAddClick);
+    // $("#monthly-cost").click(handleAddClick)
+    $(".delete-person").click(handleDeleteClick);
 // Find and remove selected table rows
-function handleDeleteClick(){
-        $("table tbody").find('input[name="record"]').each(function(){
-            if($(this).is(":checked")){
-                $(this).parents("tr").remove();
-            }
-        });
-    };
+
 };
+function handleAddClick(){
+    let firstName = $("#first-name").val();
+    let lastName = $("#last-name").val();
+    let eID = $("#eID").val();
+    let title = $("#title").val();
+    let salary = $("#salary").val();
+    let employeeInfo = "<tr><td><input type='checkbox' name='selector'></td><td>" + firstName + "</td><td>" + lastName + "</td><td>" + eID + "</td><td>" + title + "</td><td>" + salary + "</td></tr>"
+    $("table tbody").append(employeeInfo);
+
+
+};
+
+function handleDeleteClick(){
+    $("table tbody").find('input[name="selector"]').each(function(){
+    if($(this).is(":checked")){
+    $(this).parents("tr").remove();
+}
+});
+};
+
 
 
 

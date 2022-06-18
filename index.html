@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
-<script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src = "jquery-3.6.0.min.js"></script>
 <script src = "script.js"></script>
 
 
@@ -15,7 +15,7 @@
         <input type="text" id="eID" placeholder="ID Number">
         <input type="text" id="title" placeholder="Title">
         <input type="number" id="salary" placeholder="Annual Salary">
-    	<input type="button" class="add-row" value="Add Row">
+    	<input type="button" class="add-person" value="Submit">
     </form>
     <table>
         <thead>
@@ -30,15 +30,11 @@
         </thead>
         <tbody>
             <tr>
-                <td><input type="checkbox" name="record"></td>
-                <td>Mahmoud</td>
-                <td>Mahmoud</td>
-                <td>7287101</td>
-                <td>Head Zoologist</td>
-                <td>30</td>
+            
             </tr>
         </tbody>
     </table>
-    <button type="button" class="delete-row">Delete Row</button>
+    <button type="button" class="delete-person">Remove Employee</button>
+    <h3>Monthly Cost:<span id = "monthly-cost"> 0</span></h3>
 </body> 
 </html>

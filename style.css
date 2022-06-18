@@ -1,3 +1,11 @@
+body{
+    background-color: #cdcdcd;
+}
+
+
+
+
+
 form{
     margin: 20px 0;
 }
@@ -13,10 +21,20 @@ table{
 }
 
 table, th, td{
-    border: 1px solid #cdcdcd;
+    border: 1px solid #000000;
 }
 
 table th, table td{
     padding: 10px;
     text-align: left;
+}
+button{
+    cursor: pointer;
+}
+
+.add-person{
+    cursor: pointer;
+}
+h3{
+    margin-left: 500px;
 }

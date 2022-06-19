@@ -18,9 +18,8 @@ function handleAddClick(){
     let employeeInfo = "<tr><td><input type='checkbox' name='selector'></td><td>" + firstName + "</td><td>" + lastName + "</td><td>" + eID + "</td><td>" + title + "</td><td>" + salary + "</td></tr>"
     $("table tbody").append(employeeInfo);
     
-
     let employees = [];
-
+    
     const employee = {
         firstName: $("#first-name").val(),
         lastName: $("#last-name").val(),

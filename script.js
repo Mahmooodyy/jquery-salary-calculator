@@ -19,7 +19,7 @@ function handleAddClick(){
     $("table tbody").append(employeeInfo);
     
     let employees = [];
-    
+
     const employee = {
         firstName: $("#first-name").val(),
         lastName: $("#last-name").val(),

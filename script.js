@@ -4,9 +4,11 @@ function onReady(){
     $(".add-person").click(handleAddClick);
     // $("#monthly-cost").click(handleAddClick)
     $(".delete-person").click(handleDeleteClick);
-// Find and remove selected table rows
-
+    clearInputs()
 };
+
+let monthlyCost = 0
+
 function handleAddClick(){
     let firstName = $("#first-name").val();
     let lastName = $("#last-name").val();
@@ -15,8 +17,9 @@ function handleAddClick(){
     let salary = $("#salary").val();
     let employeeInfo = "<tr><td><input type='checkbox' name='selector'></td><td>" + firstName + "</td><td>" + lastName + "</td><td>" + eID + "</td><td>" + title + "</td><td>" + salary + "</td></tr>"
     $("table tbody").append(employeeInfo);
+    clearInputs()
 
-
+    $('#monthly-cost').empty().append(monthlyCost);
 };
 
 function handleDeleteClick(){
@@ -27,16 +30,10 @@ function handleDeleteClick(){
 });
 };
 
-
-
-
-// function handleAddClick(){
-//     console.log('in add');
-//     // take the information form the input field
-//     $().append($('#first-name').val())
-//     $('#ln-slot').append($('#last-name').val())
-//     $('#eID-slot').append($('#eID').val())
-//     $('#title-slot').append($('#title').val())
-//     $('#salary-slot').append($('#salary').val())
-// }
-
+function clearInputs(){
+    $("#first-name").val('');
+    $("#last-name").val('');
+    $("#eID").val('');
+    $("#title").val('');
+    $("#salary").val('');
+}

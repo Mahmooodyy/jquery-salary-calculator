@@ -1,11 +1,6 @@
 body{
     background-color: #cdcdcd;
 }
-
-
-
-
-
 form{
     margin: 20px 0;
 }
@@ -21,7 +16,7 @@ table{
 }
 
 table, th, td{
-    border: 1px solid #000000;
+    border: 1px solid #9c6666;
 }
 
 table th, table td{
@@ -36,5 +31,13 @@ button{
     cursor: pointer;
 }
 h3{
-    margin-left: 500px;
+    align-items: right;
+}
+
+:checked{
+    cursor: pointer;
+}
+
+check-box{
+    cursor: pointer;
 }
